@@ -15,5 +15,5 @@ This is a python script that makes an image with text from the text you provide 
 ## Example
 
 ```
-$ python3 -t 'Hello World' -c (255,0,0) -b (0,0,0) -s 20 -o helloworld.png
+$ python3 str2img.py -t 'Hello World' -c 255 0 0 -b 0 0 0 -s 20 -o helloworld.png
 ```
