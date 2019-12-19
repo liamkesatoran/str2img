@@ -19,4 +19,5 @@ $ python3 str2img.py -t 'Hello World' -c 255 0 0 -b 0 0 0 -s 20 -o helloworld.pn
 ```
 
 Example output:
+
 ![alt text](https://raw.githubusercontent.com/liamkesatoran/str2img/master/text.png)
