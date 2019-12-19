@@ -1,4 +1,6 @@
-import sys, pythargparse
+#!/usr/bin/python
+
+import sys, argparse
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
 
@@ -56,3 +58,4 @@ def main(args):
 
 if __name__=='__main__':
 	main(args)
+	print('Done!')
