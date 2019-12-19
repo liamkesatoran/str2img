@@ -16,10 +16,10 @@ ap.add_argument('-s',"--fontsize", type = int, required=False, default= 10,
 ap.add_argument('-f','--font', type = str, required=False, default= 'arial.ttf',
    help="font (default 'arial.ttf') ")
    
-ap.add_argument('-c','--text_color', type = tuple, required=False, default=(0,0,0),
+ap.add_argument('-c','--text_color', type = int, nargs=3, required=False, default=(0,0,0),
 	help="text color (default (0,0,0) : black))")
 	
-ap.add_argument('-b','--bg_color', type = tuple, required=False, default=(255,255,255),
+ap.add_argument('-b','--bg_color', type = int, nargs=3, required=False, default=(255,255,255),
 	help="background color (default (255,255,255) : white))")
 	
 ap.add_argument('-t', '--text', type = str, required = True, help='text')
@@ -34,8 +34,8 @@ def main(args):
 	text = ' '+args['text']+' ' #Small padding on the sizes
 	fontsize =  args['fontsize'] # starting font size
 	font = ImageFont.truetype(args['font'], fontsize)
-	text_color = args['text_color']
-	bg_color = args['bg_color']
+	text_color = tuple(args['text_color'])
+	bg_color = tuple(args['bg_color'])
 	of = args['output']
 	lines = textwrap.wrap(text, width=args['wrap'])
 	
