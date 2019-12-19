@@ -12,10 +12,11 @@ This is a python script that makes an image with text from the text you provide 
 
 ---------
 
-## Example
-
+## Examples
+Example usage:
 ```
 $ python3 str2img.py -t 'Hello World' -c 255 0 0 -b 0 0 0 -s 20 -o helloworld.png
 ```
 
-[alt text](https://raw.githubusercontent.com/liamkesatoran/str2img/master/text.png)
+Example output:
+![alt text](https://raw.githubusercontent.com/liamkesatoran/str2img/master/text.png)
